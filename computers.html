@@ -3,21 +3,22 @@
 <head>
   <title>Mr Robot!</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" type="text/css" />
-  <link rel="stylesheet" href="robostore.less">
-  </head>
+  <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Almendra SC' rel='stylesheet'>
+  <link rel="stylesheet" type="text/css" href="robotstore.css">
+</head>
   <body>
     <header>
       <a  href="index.html">
-          <img class="headerlogo" src="images/logo.jpg" />
+          <img class="headerlogo"  src="images/logo.jpg" />
       </a>
-        <nav class="navbar-background">
-            <ul>
-              <li><a class="navlink active" href="index.html">Home</a></li>
-              <li><a class="navlink" href="robots.html">Robots</a></li>
-              <li><a class="navlink" href="computers.html">Hardware</a></li>
-              <li><a class="navlink" href="contact.html">Contact</a></li>
-              <li><a class="navlink" href="about.html">About</a></li>
-            </ul>
+        <nav  class="navbar-background">
+
+            <a class="navlink active" href="index.html">Home</a>
+            <a class="navlink" href="robots.html">Robots</a>
+            <a class="navlink" href="computers.html">Hardware</a>
+              <a class="navlink" href="contact.html">Contact</a>
+            <a class="navlink" href="about.html">About</a>
         </nav>
         <div>
 
@@ -27,7 +28,7 @@
     </header>
 
     <form>
-      <fieldset>
+      <fieldset class="firstfield">
         <legend>Select a CPU</legend>
         <p><label for="i3"><input type="radio" name="CPU" id="i3">Intel i3</label></p>
         <p><label for="i4"><input type="radio" name="CPU" id="i4"></label>Intel i4</p>
@@ -39,14 +40,14 @@
     <p><label for="16"><input type="radio" name="ram" id="16">16gig</label></p>
   </fieldset>
     <fieldset>
-      <legend></legend>
+      <legend> Select Accessories</legend>
 
       <p><label for="vrh"><input type="checkbox" name="" id="vrh">Virtual Reality Helmet</label></p>
       <p><label for="3ds"><input type="checkbox" name="" id="3ds">3D Screen</label></p>
       <p><label for="ss"><input type="checkbox" name="" id="ss">Stereo Speakers</label></p>
     </fieldset>
   <p>
-    <button>Submit</button>
+    <button  >Submit</button>
   </p>
 </form>
 <footer>
