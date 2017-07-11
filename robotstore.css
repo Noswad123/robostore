@@ -2,6 +2,9 @@ img.headerlogo {
   height: 200px;
   width: 200px;
 }
+.roboContainer {
+  margin-top: -200px;
+}
 .navbar-background {
   position: relative;
   list-style-type: none;
@@ -28,9 +31,6 @@ nav a:hover {
 }
 .searchbox {
   float: right;
-  position: absolute;
-  top: 75px;
-  right: 20px;
 }
 .robotlist {
   text-align: center;
@@ -42,8 +42,6 @@ nav a:hover {
   left: 400px;
   font-size: 50px;
   color: red;
-}
-#coffeeofthemonth {
   margin-left: 50%;
 }
 .bg {
@@ -98,6 +96,10 @@ img#imgrobo1 {
   column-count: 2;
   margin-left: 100px;
 }
+#mrRobot {
+  width: 200px;
+  height: 200px;
+}
 footer {
   color: white;
   display: block;
@@ -108,4 +110,9 @@ footer {
 }
 ul {
   list-style-type: none;
+}
+footer {
+  position: fixed;
+  margin-top: 50vh;
+  width: 100vw;
 }

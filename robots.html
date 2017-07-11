@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <title>Mr Robot!</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" type="text/css" />
@@ -9,72 +10,75 @@
   <link href='https://fonts.googleapis.com/css?family=Dancing Script' rel='stylesheet'>
   <link href='https://fonts.googleapis.com/css?family=Almendra SC' rel='stylesheet'>
   <link rel="stylesheet" type="text/css" href="robotstore.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="robotstore.js"></script>
 </head>
+
 <body>
   <header>
-    <a  href="index.html">
+    <a href="index.html">
         <img class="headerlogo"  src="images/logo.jpg" />
     </a>
-      <nav  class="navbar-background">
+    <nav class="navbar-background">
 
-          <a class="navlink active" href="index.html">Home</a>
-          <a class="navlink" href="robots.html">Robots</a>
-          <a class="navlink" href="computers.html">Hardware</a>
-            <a class="navlink" href="contact.html">Contact</a>
-          <a class="navlink" href="about.html">About</a>
-      </nav>
-      <div>
+      <a class="navlink active" href="index.html">Home</a>
+      <a class="navlink" href="robots.html">Robots</a>
+      <a class="navlink" href="computers.html">Hardware</a>
+      <a class="navlink" href="contact.html">Contact</a>
+      <a class="navlink" href="about.html">About</a>
+      <input type="search" class="searchbox" placeholder="Search our store" />
+      <button class="searchbox" id="searchButton">Search</button>
+    </nav>
 
-          <span id="headername">Mr. Robot</span>
-          <input type="search" class="searchbox" placeholder="Search our store" />
-      </div>
   </header>
-  <div id="coffeeofthemonth">
-
-      <img src="images/robot_hello.png" />
+  <div id="headername">
+    <h1>Mr. Robot</h1>
+    <img id="mrRobot" src="images/robot_hello.png" />
 
   </div>
-<ul class="robotlist">
-<div id="ret">
-  <li id="robo1"> R.E.T.</li>
+  <div class="roboContainer">
+    <ul class="robotlist">
+      <div id="ret">
+        <li id="robo1"> R.E.T.</li>
 
-      <li><img id="imgrobo1" src="images/roboDog.png" alt="robo1"></li>
-      <li>  Description:</li>
+        <li><img id="imgrobo1" class="img-thumbnail" src="images/roboDog.png" alt="robo1"></li>
+        <li> Description:</li>
 
-    <li>This was our first robot.He was modeled after the famous movie character E.T.</li>
+        <li>This was our first robot.He was modeled after the famous movie character E.T.</li>
 
-</div>
-<div id="butler">
-  <ul>
-  <li id="robo2"> Butler Bot</li>
-    <ul>
-      <li><img id="imgrobo2" src="images/robot2.png" width=200 height=200 alt="robo1"></li>
-      <li>  Description:</li>
+      </div>
+      <div id="butler">
+        <ul>
+          <li id="robo2"> Butler Bot</li>
+          <ul>
+            <li><img id="imgrobo2" class="img-thumbnail" src="images/robot2.png" width=200 height=200 alt="robo1"></li>
+            <li> Description:</li>
+          </ul>
+          <li>This was our second robot. He makes a mean martini!.</li>
+        </ul>
+      </div>
+      <div id="mega">
+        <ul>
+          <li id="robo3"> Mega Man</li>
+          <ul>
+            <li><img id="imgrobo3" class="img-thumbnail" src="images/robot3.png" width=200 height=200 alt="robo1"></li>
+            <li> Description:</li>
+          </ul>
+          <li>This is our newest model.This one will follow you around the house.</li>
+        </ul>
     </ul>
-    <li>This was our second robot. He makes a mean martini!.</li>
-  </ul>
-</div>
-<div id="mega">
-  <ul>
-  <li id="robo3"> Mega Man</li>
-    <ul>
-      <li><img id="imgrobo3" src="images/robot3.png" width=200 height=200 alt="robo1"></li>
-      <li>  Description:</li>
-    </ul>
-    <li>This is our newest model.This one will follow you around the house.</li>
-  </ul>
-</ul>
-</div>
+    </div>
+  </div>
 
-
-<footer>
-  <p>Our address is <address>1011 Crater Ave, Moon City: THE MOON</address></p>
-  <p class="textcontent">All site contents is copyright <a class="mainlink" href="http://www.mrrobot.com">Mr Robot!</a></p>
-  <p class="smalltext">This page was generated on <time>09:25:04.123</time>.</p>
-</footer>
+  <footer>
+    <p>Our address is <address>1011 Crater Ave, Moon City: THE MOON</address></p>
+    <p class="textcontent">All site contents is copyright <a class="mainlink" href="http://www.mrrobot.com">Mr Robot!</a></p>
+    <p class="smalltext">This page was generated on <time>09:25:04.123</time>.</p>
+  </footer>
 
 
 </body>
+
 </html>
