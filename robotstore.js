@@ -10,7 +10,7 @@ $(document).ready(function(){
     $("#butler").hide();
   }
 
-  hideAll();
+
   $("#searchButton").click(function(){
 
     var i=0;
@@ -34,7 +34,7 @@ $(document).ready(function(){
         }
       if (robot.substring(1,i)==butler.substring(0,i-1))
         {
-        
+
           console.log(robot.substring(1,i));
           console.log(butler.substring(0,i-1));
           $("#"+butler).show();

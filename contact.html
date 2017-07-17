@@ -1,71 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <title>Mr Robot!</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" type="text/css" />
   <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Frijole' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Abril Fatface' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Dancing Script' rel='stylesheet'>
   <link href='https://fonts.googleapis.com/css?family=Almendra SC' rel='stylesheet'>
   <link rel="stylesheet" type="text/css" href="robotstore.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
   <script src="robotstore.js"></script>
 </head>
-  <body class="bg">
-    <header>
-      <a  href="index.html">
-          <img class="headerlogo"  src="images/logo.jpg" />
-      </a>
-      <nav  class="navbar-background">
 
-          <a class="navlink active" href="index.html">Home</a>
-          <a class="navlink" href="robots.html">Robots</a>
-          <a class="navlink" href="computers.html">Hardware</a>
-            <a class="navlink" href="contact.html">Contact</a>
-          <a class="navlink" href="about.html">About</a>
-          <input type="search" class="searchbox" placeholder="Search our store" />
-          <button class="searchbox">Search</button>
-      </nav>
-        <div>
+<body class="bg">
+  <header>
+    <div class="navbar navbar-inverse navbar-static-top">
+      <div class="container">
 
-            <span id="headername">Mr. Robot</span>
+        <button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+        <div class="collapse navbar-collapse navHeaderCollapse">
+          <ul class="nav navbar-nav ">
+            <li><a href="index.html"><img class="headerlogo"  src="images/logo.jpg" /></a></li>
+            <li ><a href="index.html">Home</a></li>
+            <li><a href="robots.html">Robots</a></li>
+            <li><a href="about.html">About</a></li>
+            <li class="active"><a href="contact.html">Contact</a></li>
+          <li><a href="computers.html">Computers</a></li>
+          </ul>
 
         </div>
-    </header>
-    <div id="welcomeimage">
-      <!--<img src="images/Mr.-Robot-Welcome.png" height="400px" alt="About us">-->
+      </div>
+
     </div>
-<form id="contactForm">
-  <fieldset>
-    <div>
-    <legend>Enter your Contact info below:</legend>
-     <p>
-    <label for="fullname">Full Name:</label><input type="text" name="fullname" id="fullname">
-     </p>
-<p>
-    <label for="email">   Email:</label><input type="email" name="email" id="email">
-</p>
-<p>
-    <label for="yloc">   Loaction:</label>
-    <select name="" id="yloc">
+  </header>
+  <div id="welcomeimage">
+    <!--<img src="images/Mr.-Robot-Welcome.png" height="400px" alt="About us">-->
+  </div>
+  <form id="contactForm">
+    <fieldset>
+      <div>
+        <legend>Enter your Contact info below:</legend>
+        <p>
+          <label for="fullname">Full Name:</label><input type="text" name="fullname" id="fullname">
+        </p>
+        <p>
+          <label for="email">   Email:</label><input type="email" name="email" id="email">
+        </p>
+        <p>
+          <label for="yloc">   Loaction:</label>
+          <select name="" id="yloc">
       <option value="0">Moon</option>
       <option value="1">Earth</option>
     </select>
-</p>
-<p><label for="quest">Your Question</label><br>
-  <textarea name="quest" id="" cols="50" rows="10" maxlength="500"></textarea></p>
-</div>
+        </p>
+        <p><label for="quest">Your Question</label><br>
+          <textarea name="quest" id="" cols="50" rows="10" maxlength="500"></textarea></p>
+      </div>
 
-</fieldset>
-  <p>
-  <button id="btnSendInfo" class="submitbutton">Send Info</button>
-  </p>
-</form>
-<footer>
-  <p>Our address is <address>1011 Crater Ave, Moon City: THE MOON</address></p>
-  <p class="textcontent">All site contents is copyright <a class="mainlink" href="http://www.mrrobot.com">Mr Robot!</a></p>
-  <p class="smalltext">This page was generated on <time>09:25:04.123</time>.</p>
+    </fieldset>
+    <p>
+      <button id="btnSendInfo" class="submitbutton">Send Info</button>
+    </p>
+  </form>
+  <footer class="navbar navbar-inverse">
+  <div class="container">
+    <div class="col-md-4">
+      <p class=" navbar-text">Our address: 1011 Crater Ave, Moon City: THE MOON</p>
+    </div>
+    <div class="col-md-4">
+      <p class="textcontent navbar-text">All site contents is copyright <a class="mainlink" href="http://www.mrrobot.com">Mr Robot!</a></p>
+    </div>
+    <div class="col-md-4">
+      <p class=" smalltext navbar-text">This page was generated on <time>09:25:04.123</time>.</p>
+    </div>
+
+  </div>
 </footer>
 
-  </body>
+</body>
+
 </html>

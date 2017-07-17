@@ -1,58 +1,79 @@
-﻿<!DOCTYPE html>
+
+<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
+
 <head>
   <title>Mr Robot!</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" type="text/css" />
   <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Frijole' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Abril Fatface' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Dancing Script' rel='stylesheet'>
   <link href='https://fonts.googleapis.com/css?family=Almendra SC' rel='stylesheet'>
   <link rel="stylesheet" type="text/css" href="robotstore.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
   <script src="robotstore.js"></script>
 </head>
+
 <body>
   <header>
-    <a  href="index.html">
-        <img class="headerlogo"  src="images/logo.jpg" />
-    </a>
-    <nav  class="navbar-background">
+    <div class="navbar navbar-inverse navbar-static-top">
+      <div class="container">
 
-        <a class="navlink active" href="index.html">Home</a>
-        <a class="navlink" href="robots.html">Robots</a>
-        <a class="navlink" href="computers.html">Hardware</a>
-          <a class="navlink" href="contact.html">Contact</a>
-        <a class="navlink" href="about.html">About</a>
-        <input type="search" class="searchbox" placeholder="Search our store" />
-        <button class="searchbox">Search</button>
-    </nav>
-      <div>
+        <button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        <div class="collapse navbar-collapse navHeaderCollapse">
+          <ul class="nav navbar-nav ">
+            <li><a href="index.html"><img class="headerlogo"  src="images/logo.jpg" /></a></li>
+            <li class="active"><a href="index.html">Home</a></li>
+            <li ><a href="robots.html">Robots</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          <li><a href="computers.html">Computers</a></li>
+          </ul>
 
-          <span id="headername">Mr. Robot</span>
-
+        </div>
       </div>
-  </header>
-    <!--<div id="welcomeimage">
-        <img src="images/welcome.jpg" />
-    </div>-->
-    <div id="coffeeofthemonth">
-
-        <img src="images/robot_hello.png" />
 
     </div>
-    <section >
-        <header id="welcome">Welcome to Mr Robot!</header>
-        <div id="welcometext">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam in lobortis ex. Suspendisse vestibulum varius porta. Ut ligula risus, fermentum nec elit eget, feugiat consequat diam. Donec accumsan tristique convallis. Curabitur sit amet facilisis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque sollicitudin augue et metus volutpat pellentesque. Maecenas dui quam, iaculis at massa in, varius varius lectus.
-            Fusce efficitur justo sed lobortis efficitur. Sed vel quam at mi tristique convallis non id justo. Vestibulum molestie odio sed congue tempor. Mauris at nisl a risus finibus efficitur. Mauris quis luctus erat, id auctor tellus. Nulla vel suscipit metus. Donec porta dapibus eros et finibus. Maecenas suscipit nisl sed dictum luctus. Proin suscipit laoreet ante a dictum. Donec ornare, erat quis dignissim maximus, neque ex laoreet massa, sed convallis turpis turpis ut elit. Suspendisse varius augue ante, sed fermentum dui facilisis non. Nulla neque leo, placerat ut tempor quis, ornare sed lorem. Mauris egestas sem non magna semper lobortis.
-            <p><mark>Note that our store is closed on Christmas eve and Christmas day.</mark></p>
-        </div>
-    </section>
-    <footer>
-      <p>Our address is <address>1011 Crater Ave, Moon City: THE MOON</address></p>
-      <p class="textcontent">All site contents is copyright <a class="mainlink" href="http://www.mrrobot.com">Mr Robot!</a></p>
-      <p class="smalltext">This page was generated on <time>09:25:04.123</time>.</p>
-    </footer>
+  </header>
+
+  <div id="coffeeofthemonth">
+    <center>
+      <img src="images/robot_hello.png" />
+    </center>
+  </div>
+  <section>
+    <header id="welcome">Welcome to Mr Robot!</header>
+    <div id="welcometext">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam in lobortis ex. Suspendisse vestibulum varius porta. Ut ligula risus, fermentum nec elit eget, feugiat consequat diam. Donec accumsan tristique convallis. Curabitur sit amet facilisis sapien.
+      Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque sollicitudin augue et metus volutpat pellentesque. Maecenas dui quam, iaculis at massa in, varius varius lectus. Fusce efficitur justo sed lobortis efficitur.
+      Sed vel quam at mi tristique convallis non id justo. Vestibulum molestie odio sed congue tempor. Mauris at nisl a risus finibus efficitur. Mauris quis luctus erat, id auctor tellus. Nulla vel suscipit metus. Donec porta dapibus eros et finibus.
+      Maecenas suscipit nisl sed dictum luctus. Proin suscipit laoreet ante a dictum. Donec ornare, erat quis dignissim maximus, neque ex laoreet massa, sed convallis turpis turpis ut elit. Suspendisse varius augue ante, sed fermentum dui facilisis non.
+      Nulla neque leo, placerat ut tempor quis, ornare sed lorem. Mauris egestas sem non magna semper lobortis.
+      <p><mark>Note that our store is closed on Christmas eve and Christmas day.</mark></p>
+    </div>
+  </section>
+  <footer class="navbar navbar-inverse">
+    <div class="container">
+      <div class="col-md-4">
+        <p class=" navbar-text">Our address: 1011 Crater Ave, Moon City: THE MOON</p>
+      </div>
+      <div class="col-md-4">
+        <p class="textcontent navbar-text">All site contents is copyright <a class="mainlink" href="http://www.mrrobot.com">Mr Robot!</a></p>
+      </div>
+      <div class="col-md-4">
+        <p class=" smalltext navbar-text">This page was generated on <time>09:25:04.123</time>.</p>
+      </div>
+
+    </div>
+  </footer>
 </body>
 
 </html>
