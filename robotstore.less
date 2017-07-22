@@ -1,23 +1,4 @@
-
-//variables
-
-//mixins
-
-.home{
-
-  grid-area:logo;
-  text-align: center;
-}
-img.headerlogo{
-
-    height: 100px;
-    width: 100px;
-
-}
-header{
-  //grid-column: span 3;
-  grid-area: header;
-}
+//layouts
 .aboutLayout{
   display: grid;
   grid-template-rows: 1fr auto 1fr;
@@ -26,6 +7,60 @@ header{
                         "logo main main"
                         "footer footer  footer";
 }
+.indexLayout{
+  display: grid;
+  grid-template-rows: auto auto 1fr;
+  grid-template-columns: 1fr 2fr 2fr;
+  grid-template-areas: "logo header header"
+                        "main main main"
+                        "footer footer  footer";
+}
+.robotsLayout{
+  display: grid;
+  grid-template-rows: 1fr auto 1fr;
+  grid-template-columns: 1fr 2fr 2fr;
+  grid-template-areas: "logo header header"
+                        "logo main main"
+                        "footer footer  footer";
+}
+.myForm{
+  display: flex;
+  justify-content: flex-end;
+}
+.home{
+
+  grid-area:logo;
+  text-align: center;
+}
+header{
+  //grid-column: span 3;
+  grid-area: header;
+}
+.main{
+  grid-area:main;
+}
+footer{
+  color:white;
+
+  font-size: 10px;
+  background-color:black;
+  width:100%;
+  height: 50px;
+  grid-area: footer;
+}
+.robotList{
+
+display: flex;
+flex-wrap: wrap;
+
+}
+img.headerlogo{
+
+    height: 100px;
+    width: 100px;
+
+}
+
 .roboPic{
   grid-area: roboPic;
 }
@@ -72,12 +107,10 @@ nav a:hover {
   float: right;
 
 }
-.main{
-  grid-area:main;
-}
+
 .bg{
   background-image: url(images/Mr.-Robot-Welcome.png);
-  background-position: right;
+  background-position: left;
   background-size: 50%;
   background-repeat: no-repeat;
 }
@@ -128,15 +161,7 @@ img#imgrobo1{
   width:200px;
   height: 200px;
 }
-footer{
-  color:white;
-  line-height: 5px;
-  font-size: 10px;
-  background-color:black;
-  width:100%;
-  height: 50px;
-  grid-area: footer;
-}
+
 .myFooter{
   display:grid;
   grid-template-columns: repeat(3, 1fr);

@@ -17,12 +17,15 @@
   <script src="robotstore.js"></script>
 </head>
 
-<body>
+<body >
+  <div class="robotsLayout">
+    <div class="home"><a  href="index.html"><img  class="headerlogo" src="images/logo.jpg" /></a>
+      <div id="welcomeimage" >
+        <img id="mrRobot"  src="images/robot_hello.png" />
+      </div></div>
   <header>
 
   <div class="navbar navbar-inverse navbar-static-top">
-    <div class="container">
-
       <button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
@@ -30,7 +33,6 @@
         </button>
       <div class="collapse navbar-collapse navHeaderCollapse">
         <ul class="nav navbar-nav ">
-          <li><a href="index.html"><img class="headerlogo"  src="images/logo.jpg" /></a></li>
           <li ><a href="index.html">Home</a></li>
           <li class="active"><a href="robots.html">Robots</a></li>
           <li><a href="about.html">About</a></li>
@@ -39,23 +41,15 @@
           <li ><input type="search" class="searchbox" placeholder="Search our store" />
           <button class="searchbox" id="searchButton">Search</button></li>
         </ul>
-
       </div>
     </div>
 
-  </div>
-
-
   </header>
-  <div id="headername">
-    <h1>Mr. Robot</h1>
-    <img id="mrRobot" src="images/robot_hello.png" />
-  </div>
-  <div class="container-fluid">
-    <div class="row">
-      <div class="filler col-sm-6 col-md-4">
-    </div>
-      <div id="ret" class="col-sm-6 col-md-4">
+
+<div class="main robotList">
+
+      <div class="filler">  </div>
+      <div id="ret" onmouseover="highlight('ret','#f45f42')" onmouseout="highlight('ret','transparent')">
         <div class="thumbnail">
           <img id="imgrobo1" src="images/roboDog.png" width=200 height=200 alt="robo1">
           <div class="caption">
@@ -64,11 +58,8 @@
           </div>
         </div>
       </div>
-    </div>
-    <div class="row">
-      <div class="filler col-sm-6 col-md-4">
-    </div>
-      <div id="butler" class="col-sm-6 col-md-4">
+      <div class="filler">  </div>
+      <div id="butler" onmouseover="highlight('butler','#f45f42')" onmouseout="highlight('butler','transparent')">
         <div class="thumbnail">
           <img id="imgrobo2" src="images/robot2.png" width=200 height=200 alt="robo1">
           <div class="caption">
@@ -77,39 +68,32 @@
           </div>
         </div>
       </div>
-    </div>
-    <div class="row">
-      <div class="filler col-sm-6 col-md-4">
-    </div>
-      <div id="mega" class="col-sm-6 col-md-4">
+<div class="filler">  </div>
+      <div id="mega" onmouseover="highlight('mega','#f45f42')" onmouseout="highlight('mega','transparent')">
         <div class="thumbnail">
           <img id="imgrobo3" src="images/robot3.png" width=200 height=200 alt="robo3">
           <div class="caption">
             <h3 id="robo3">Mega Man</h3>
             <p>This is our newest model.This one will follow you around the house.</p>
-          </div>
         </div>
       </div>
     </div>
-  </div>
-
-
+</div>
 
   <footer class="navbar navbar-inverse">
-    <div class="container">
-      <div class="col-md-4">
+    <div class="myFooter">
+      <div >
         <p class=" navbar-text">Our address: 1011 Crater Ave, Moon City: THE MOON</p>
       </div>
-      <div class="col-md-4">
+      <div >
         <p class="textcontent navbar-text">All site contents is copyright <a class="mainlink" href="http://www.mrrobot.com">Mr Robot!</a></p>
       </div>
-      <div class="col-md-4">
+      <div >
         <p class=" smalltext navbar-text">This page was generated on <time>09:25:04.123</time>.</p>
       </div>
-
     </div>
   </footer>
-
+</div>
 </body>
 
 </html>

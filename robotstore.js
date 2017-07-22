@@ -45,3 +45,8 @@ $(document).ready(function(){
 
 
 });
+function highlight(myId,myColor)
+{
+document.getElementById(myId).style.backgroundColor =myColor;
+
+}
